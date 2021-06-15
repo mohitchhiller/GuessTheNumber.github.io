@@ -6,7 +6,7 @@ let highscore = 0;
 
 document.querySelector('.check').addEventListener('click', function () {
   const guess = Number(document.querySelector('.input').value);
-
+  document.querySelector('body').style.backgroundColor = '#242424';
   if (!guess) {
     document.querySelector('.para').textContent = 'No Number ⛔';
     document.querySelector('body').style.backgroundColor = 'red';

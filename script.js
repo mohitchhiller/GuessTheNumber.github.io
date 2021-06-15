@@ -9,11 +9,12 @@ document.querySelector('.check').addEventListener('click', function () {
 
   if (!guess) {
     document.querySelector('.para').textContent = 'No Number ⛔';
+    document.querySelector('body').style.backgroundColor = 'red';
   } else if (guess === number) {
     document.querySelector('.para').textContent = '🎉 Correct Number';
     document.querySelector('.box').textContent = number;
     document.querySelector('.box').style.width = '14rem';
-    document.querySelector('body').style.backgroundColor = 'green';
+    document.querySelector('body').style.backgroundColor = '#9acd32';
     if (score >= highscore) {
       highscore = score;
       document.querySelector(
